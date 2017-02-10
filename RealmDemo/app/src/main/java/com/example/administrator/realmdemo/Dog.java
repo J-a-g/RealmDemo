@@ -9,13 +9,24 @@ import io.realm.RealmObject;
 public class Dog extends RealmObject{
     private String name;
     private int age;
+    private String dsc;
+
 
     @Override
     public String toString() {
         return "Dog{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", dsc='" + dsc + '\'' +
                 '}';
+    }
+
+    public String getDsc() {
+        return dsc;
+    }
+
+    public void setDsc(String dsc) {
+        this.dsc = dsc;
     }
 
     public String getName() {
